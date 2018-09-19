@@ -1,0 +1,10 @@
+<view class="img_list">
+  <view class="imgConment" wx:for="{{ imagelist }}">
+      <view class="imgMain">
+        <image wx:if="{{ item.loaded }}" src="{{ item.image }}" data-src="{{ item.image }}" class="fade_in"  bindtap="previewImage" />
+      </view>
+  </view>
+</view>
+<!-- 引入图片预加载组件 -->
+<import src="../img-loader/img-loader.wxml"/>
+<template is="img-loader" data="{{ imgLoadList }}"></template>

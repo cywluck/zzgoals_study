@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //注意一：
+        console.log('Marc\'s hat is new.');
+        console.log("\"Hey,nice hat!\",she said.");
+
+        //注意二：
+        //console(null.lenght);
+        //console(undefined.lenght);
+
+        //注意三：
+        console.log(5+3+" is my favourite number.");
+        console.log(""+5+3+" is my favourite number.");
+
+        //注意四：
+        console.log("No,they're saying Booo-urns.".substr(19,3));
+        console.log("No,they're saying Booo-urns.".slice(19,22));
+        console.log("aaoo".replace(new RegExp("[Aa]{2,}"),"b"));
+        console.log("aaoo".replace(/[Aa]{2,}/,"b"));
+        console.log("aaoo".search(/[Aa]{2,}/)); //类indexOf,只是接收的是正则
+        console.log("aoo".search(/[Aa]{2,}/));
+    </script>
+</body>
+</html>

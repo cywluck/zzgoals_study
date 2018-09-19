@@ -1,0 +1,30 @@
+<!--pages/product-detail/product-detail.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<view class="container">
+
+ <view class="all-content">
+    <view class="detail-title">
+      <text class="text-title">{{textTitle}}</text>
+    </view>
+    <view class="detail-img">
+      <image src="../../images/product02.jpg"></image>
+    </view>
+    <view class="little-title">
+      <text>{{biaoti}}</text>
+    </view>
+    <view class="common-css">
+      <text>{{text1}}</text>
+    </view>
+    <view class="text-img">
+      <image src="../../images/product02.jpg"></image>
+    </view>
+    <view class="common-css">
+      <text>{{text2}}</text>
+    </view>
+ </view>
+  <view class="btn">
+    <button type="primary" size="default" bindtap="primary"> 立即预约 </button>
+  </view>
+  <image src="../../images/tianti.jpg"></image>
+  <template is="common" />
+</view>

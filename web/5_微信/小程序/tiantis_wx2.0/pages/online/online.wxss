@@ -1,0 +1,10 @@
+/* pages/search/search.wxss */
+@import "../page-template/compage.wxss";
+.contact-people{padding: 0 20rpx;border-bottom: 1px solid #e5e5e5;}
+.contact-people text{ float:left;display: block;font-size: 34rpx;color:#000000;height:90rpx;line-height: 90rpx;}
+.contact-people .form-group{ float:right;display: block;width:537rpx;}
+.contact-people .form-group input{display: block;width:537rpx;border:none;color:#b3b3b3;font-size: 34rpx;height: 90rpx!important;line-height: 90rpximportant;}
+.contact-people .form-group .area-text{display: block;width:537rpx;border:none;color:#b3b3b3;font-size: 34rpx;line-height: 50rpx;height:300rpx;margin-top:27rpx;}
+.btn{padding: 0 20rpx;padding-top:53rpx;height:523rpx;background-color: #f5f5f5;}
+.btn button{background-color: #4a88ed;color:#ffffff;}
+.container>image{width:750rpx;height:122rpx;display: block;}

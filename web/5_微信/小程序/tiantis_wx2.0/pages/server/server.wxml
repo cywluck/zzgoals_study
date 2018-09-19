@@ -1,0 +1,67 @@
+<!--pages/server/server.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<view class="container">
+<!--搜索框  -->
+ <view class="search-box {{flag===0?'on':''}}">
+    <input class="input1" id="search-input" value="搜索" bindfocus="change" />
+    <view id="search-icon" class="iconfont icon-sousuo"></view>
+ </view> 
+  <view class="search-box1 {{flag===1?'on':''}} clearfix">
+    <input auto-focus="true" class="input2" id="search-input" value="输入关键字" confirm-type="search"  />
+    <view id="search-icon" class="iconfont icon-sousuo"></view>
+    <text class="cancle" bindtap="cancle">取消</text>
+ </view> 
+<!--产品内容  -->
+<view class="product-content clearfix">
+  <view class="left">
+    <block wx:for="{{produceList}}" wx:for-index="inx" wx:key="id">
+      <view class="left-list {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose" data-name="{{item.name}}"> {{item.name}} </view>
+    </block>
+  </view>
+  <view class="right">
+    <text class="title">{{mamebers}}</text>
+    <view class="right-list clearfix">
+      <view class="list-left">
+        <image src="../../images/product01.png" bindtap="tiao"></image>
+      </view>
+      <view class="list-right">
+        <text class="text-top">日常保洁</text>
+        <text class="text-foot">保持家里干净卫生、为健康创造优良环境</text>
+      </view>
+    </view>
+    <view class="right-list clearfix">
+      <view class="list-left">
+        <image src="../../images/product01.png" bindtap="tiao1"></image>
+      </view>
+      <view class="list-right">
+        <text class="text-top">日常保洁</text>
+        <text class="text-foot">保持家里干净卫生、为健康创造优良环境</text>
+      </view>
+    </view>
+    <view class="right-list clearfix">
+      <view class="list-left">
+        <image src="../../images/product01.png"></image>
+      </view>
+      <view class="list-right">
+        <text class="text-top">日常保洁</text>
+        <text class="text-foot">保持家里干净卫生、为健康创造优良环境</text>
+      </view>
+    </view>
+    <view class="right-list clearfix">
+      <view class="list-left">
+        <image src="../../images/product01.png"></image>
+      </view>
+      <view class="list-right">
+        <text class="text-top">日常保洁</text>
+        <text class="text-foot">保持家里干净卫生、为健康创造优良环境</text>
+      </view>
+    </view>
+
+
+  </view>
+</view>
+
+
+  <image src="../../images/tianti.jpg"></image>
+  <template is="common" />
+</view>

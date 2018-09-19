@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/*header 导航
+----------------------*/
+/*buttonBg 背景
+---------------------*/
+/*header nav
+---------------------*/
+/*段落缩进*/
+#about ul{position:absolute; left:308px; top:83px;}
+.content{padding:0px 5px;}
+.content p{ margin:25px 0px; text-indent:28px;line-height:1.8em;font-size:14px; color:#888888;}
+.content a{color:#00A3DC;}
+#footer{margin-top:175px;}

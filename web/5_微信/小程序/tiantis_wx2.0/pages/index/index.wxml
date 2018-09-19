@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <swiper-item>
+        <image src="../../images/jia.jpg" class="slide-image" width="100%"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/jia.jpg" class="slide-image" width="100%"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/jia.jpg" class="slide-image" width="100%"/>
+      </swiper-item>
+  </swiper>
+  
+  <view class="all-case">
+    <navigator url="../about/about" class="case-item first" open-type="redirect" >
+      <image src="../../images/about.jpg" class="about-img"></image>
+      <view class="about-text">公司简介</view>
+    </navigator>
+    <navigator url="../news/news" class="case-item" open-type="redirect">
+      <image src="../../images/news.jpg" class="about-img"></image>
+      <view class="about-text">公司新闻</view>
+    </navigator>
+    <navigator url="../server/server" class="case-item" open-type="redirect">
+      <image src="../../images/server.jpg" class="about-img"></image>
+      <view class="about-text">公司服务</view>
+    </navigator>
+    <navigator url="../case/case" class="case-item four" open-type="redirect">
+      <image src="../../images/case.jpg" class="about-img"></image>
+      <view class="about-text">公司案例</view>
+    </navigator>
+    <navigator url="../online/online" class="case-item" open-type="redirect">
+      <image src="../../images/online.jpg" class="about-img"></image>
+      <view class="about-text">在线预约</view>
+    </navigator>
+    <navigator url="../contact/contact" class="case-item" open-type="redirect">
+      <image src="../../images/contact.jpg" class="about-img"></image>
+      <view class="about-text">联系我们</view>
+    </navigator>
+  </view>
+  <template is="common" />
+</view>

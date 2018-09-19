@@ -1,0 +1,8 @@
+/* pages/server/server.wxss */
+@import "../page-template/compage.wxss";
+.list-item{padding: 0 20rpx;height:91rpx;border-bottom:1px solid #e5e5e5;}
+.list-item .left{float:left;width:68rpx;height:91rpx;}
+.list-item .right{float:right;width:640rpx;height:91rpx;font-size: 28rpx;color:#1e1e1e;line-height: 91rpx;display: block;}
+
+
+.container>image{width:750rpx;height:122rpx;display: block;}

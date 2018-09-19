@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        //打开浏览器全屏(可以整个网页全屏，也可以局部全屏(只能通过点击触发)
+        // 启动全屏
+        //openFullScreen(document.documentElement); // 整个网页
+        //openFullScreen(document.getElementById("videoElement")); // 某个页面元素
+        function openFullScreen(element){
+            if(!element)
+                element=document.documentElement;
+            //W3C
+            if (element.requestFullscreen) {  
+                element.requestFullscreen();  
+            }  
+            //FireFox   
+            else if (element.mozRequestFullScreen) {  
+                element.mozRequestFullScreen();  
+            }  
+            //Chrome等   
+            else if (element.webkitRequestFullScreen) {  
+                element.webkitRequestFullScreen();  
+            }  
+            //IE11   
+            else if (element.msRequestFullscreen) {  
+                element.msRequestFullscreen();  
+            }  
+        }
+
+        //退出浏览器全屏(只能通过点击触发)
+        function exitFullScreen(){
+            //W3C
+            if (document.exitFullscreen) {  
+                document.exitFullscreen();  
+            }  
+            //FireFox   
+            else if (document.mozCancelFullScreen) {  
+                document.mozCancelFullScreen();  
+            }  
+            //Chrome等   
+            else if (document.webkitCancelFullScreen) {  
+                document.webkitCancelFullScreen();  
+            }  
+            //IE11   
+            else if (document.msExitFullscreen) {  
+                document.msExitFullscreen();  
+            }  
+        }
+
+
+        //获取浏览器全屏显示的网页元素
+        //var fullscreenElement = document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement;
+        //判断当前是否处于全屏状态
+        //var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled;
+    </script>
+</head>
+<body>
+    <a onclick="openFullScreen()">点击打开全屏</a>
+    <br/>
+    <a onclick="exitFullScreen()">点击退出全屏</a>
+</body>
+</html>

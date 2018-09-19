@@ -1,0 +1,29 @@
+<!--pages/search/search.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<view class="container">
+<!--搜索框  -->
+ <view class="search-box" style="display:{{hidden}}">
+    <input class="input1" id="search-input" value="搜索" confirm-type="search" bindfocus="change" />
+    <view id="search-icon" class="iconfont icon-sousuo"></view>
+ </view> 
+  <view class="search-box1 clearfix" style="display:{{show}}">
+    <input class="input1" id="search-input" value="搜索" confirm-type="search" />
+    <view id="search-icon" class="iconfont icon-sousuo"></view>
+    <text class="cancle" bindtap="cancle">取消</text>
+ </view>
+  <view class="box">
+    <view class="search-img">
+      <image src="../../images/search.jpg"></image>
+    </view>
+    <view class="search-text">
+      <text>未发现你搜索的内容</text>
+      <text>请换个内容试试</text>
+    </view>
+    <view class="bton">
+      <button type="primary" size="default" bindtap="backup"> 返回上一页 </button>
+    </view>
+  </view>
+
+  <image src="../../images/tianti.jpg"></image>
+  <template is="common" />
+</view>

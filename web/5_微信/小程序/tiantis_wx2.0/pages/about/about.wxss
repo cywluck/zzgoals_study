@@ -1,0 +1,9 @@
+/* pages/about/about.wxss */
+@import "../page-template/compage.wxss";
+.header-img image{width:750rpx;height:376rpx;}
+.about-text{padding:0 20rpx;padding-top:20rpx;}
+text{display: block;}
+.about-text .title{display: block;text-align: center;line-height: 88rpx;font-size: 34rpx;color:#1e1e1e;}
+.about-text .section1{line-height: 43rpx;font-size: 28rpx;color:#1e1e1e;}
+.about-text .important{line-height: 90rpx;font-size: 28rpx;color:#1e1e1e;font-weight: bold;}
+.container>image{width:750rpx;height:122rpx;margin-top:60rpx;display: block;}

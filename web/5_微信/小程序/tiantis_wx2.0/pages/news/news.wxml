@@ -1,0 +1,43 @@
+<!--pages/news/news.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<view class="container">
+  <navigator url="../news-detail/news-detail" class="list-item">
+    <view class="list-title clearfix">
+      <view class="left">家政公司又称保姆公司，提供月子…</view>
+      <view class="right">2017-07-19</view>
+    </view>
+    <view class="list-img">
+      <image src="../../images/news01.jpg"></image>
+    </view>
+    <view class="list-text">
+      <text>家政公司又称保姆公司，指的是提供、月子护理、家庭管家、老人陪护、管道疏通、开荒保洁、室内外清洁…</text>
+    </view>
+  </navigator>
+   <navigator url="../news-detail/news-detail" class="list-item">
+    <view class="list-title clearfix">
+      <view class="left">家政公司又称保姆公司，提供月子…</view>
+      <view class="right">2017-07-19</view>
+    </view>
+    <view class="list-img">
+      <image src="../../images/news02.jpg"></image>
+    </view>
+    <view class="list-text">
+      <text>家政公司又称保姆公司，指的是提供、月子护理、家庭管家、老人陪护、管道疏通、开荒保洁、室内外清洁…</text>
+    </view>
+  </navigator>
+   <navigator url="../news-detail/news-detail" class="list-item">
+    <view class="list-title clearfix">
+      <view class="left">家政公司又称保姆公司，提供月子…</view>
+      <view class="right">2017-07-19</view>
+    </view>
+    <view class="list-img">
+      <image src="../../images/news03.jpg"></image>
+    </view>
+    <view class="list-text">
+      <text>家政公司又称保姆公司，指的是提供、月子护理、家庭管家、老人陪护、管道疏通、开荒保洁、室内外清洁…</text>
+    </view>
+  </navigator>
+  
+  <image src="../../images/tianti.jpg"></image>
+  <template is="common" />
+</view>

@@ -1,0 +1,16 @@
+<!--introducty.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<template is="common" />
+<view class="textMain">
+  <text>{{textOne}}</text>
+  <text>{{textTwo}}</text>
+  <text>{{textThr}}</text>
+  <text>{{textFou}}</text>
+  <text>{{textFiv}}</text>
+  <text>{{textSix}}</text>
+  <text>{{textSen}}</text>
+  <text>{{textEight}}</text>
+  <text>{{textNine}}</text>
+  <text>{{textTen}}</text>
+  <text>{{textElen}}</text>
+</view>

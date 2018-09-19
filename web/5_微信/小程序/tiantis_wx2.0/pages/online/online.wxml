@@ -1,0 +1,30 @@
+<!--pages/search/search.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="contact-people clearfix">
+      <text>联系人</text>
+      <view class="form-group">
+        <input type="text" class="input-text" name="username" placeholder="请输入姓名" />
+      </view>
+    </view>
+    <view class="contact-people clearfix">
+      <text>联系电话</text>
+      <view class="form-group">
+        <input type="text" class="input-text" name="username" placeholder="手机或固话" />
+      </view>
+    </view>
+    <view class="contact-people clearfix">
+      <text>预约内容</text>
+      <view class="form-group">
+        <textarea placeholder="请输入预约内容" class="area-text" />
+      </view>
+    </view>
+    <!--提交按钮  -->
+    <view class="btn">
+      <button form-type="submit" type="default" size="default">预约</button>
+    </view>
+  </form>
+  <image src="../../images/tianti.jpg"></image>
+  <template is="common" />
+</view>

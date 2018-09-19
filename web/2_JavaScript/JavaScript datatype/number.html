@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //注意一：js数值类型使用64 bit 双精度浮点数
+        console.log(0.1+0.2);
+        console.log(1-0.3+0.1==0.8);
+
+        //注意二：被0整除,Infinity无限，无穷大
+        console.log(5/0);
+        console.log(-5/0);
+        console.log(0/0);
+        console.log(10/0==Infinity);
+        console.log(isFinite(10/0));
+
+        //注意三：NaN
+        console.log(parseInt("cat"));
+        console.log(isNaN(parseInt("cat")));
+    </script>
+</body>
+</html>

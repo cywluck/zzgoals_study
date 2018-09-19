@@ -1,0 +1,16 @@
+<!--pages/about/about.wxml-->
+<import src="/pages/page-template/compage.wxml"/>
+<view class="container">
+  <view class="header-img">
+    <image src="../../images/about01.jpg"></image>
+  </view>
+  <view class="about-text">
+    <text class="title">{{text1}}</text>
+    <text class="section1">{{text2}}</text>
+    <text class="important">{{text3}}</text>
+    <text class="section1">{{text4}}</text>
+    <text class="section1">{{text5}}</text>
+  </view>
+  <image src="../../images/tianti.jpg"></image>
+  <template is="common" />
+</view>

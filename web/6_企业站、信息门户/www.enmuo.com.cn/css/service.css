@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+/*header 导航
+----------------------*/
+/*buttonBg 背景
+---------------------*/
+
+#buttonBg{ position:relative; height:290px;background:#00A3DC; overflow:hidden; zoom:1}
+#service ul{position:absolute; left:228px; top:83px;}
+.content{padding:0px 5px;}
+.content p{ margin:25px 0px; line-height:1.8em;font-size:14px; color:#888888;text-indent:28px;}
+.content a{color:#00A3DC;}
+#footer{margin-top:175px;}
+#nav .iteam_li{background-position:-185px -100px;}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //object
+        console.log('object start');
+
+        var user={
+            first_name:"marc",
+            "last_name":"wandschneider",
+            'age':Infinity,
+            citizenship:"man of th world"
+        };
+        console.log(user.hair_colour);
+        user.hair_colour="brown";
+        user["country"]='china';
+        console.log(user);
+        //delete user.country;
+        //console.log(user); //注意查看和上一个一块打印的效果，引用类型
+        //console.log(Object.keys(user).length); //V8,IE不支持
+
+
+
+
+        //array
+        console.log('\n\n\narray start');
+
+        var arr1=[];
+        console.log(typeof arr1);
+        console.log(Array.isArray(arr1)); //V8
+
+        var arr2=['cat','rat','bat'];
+        arr2[arr2.length]='fat'; //good，尾部添加
+        console.log(arr2);
+        arr2[20]='splat';
+        console.log(arr2);
+        console.log(arr2[4]);
+        delete arr2[3]; //只是将值改成undefined
+        console.log(arr2); //为啥和object同为引用类型，下面修改的为啥没有影响上面的输出结果？
+        console.log(arr2[3]);
+
+        arr2.push("mat"); //尾部添加
+        console.log(arr2);
+        arr2.pop(); //尾部删除
+        console.log(arr2);
+        arr2.unshift("first"); //头部添加
+        console.log(arr2);
+        arr2.shift(); //头部删除
+        console.log(arr2);
+
+        //splice
+
+        //split,join
+
+        //function
+        console.log('\n\n\nfunction start');
+
+
+
+        //hash
+
+
+        //map
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+ <!--底部导航-->
+<template name="common">
+  <view class="footNav">
+    <view class="footList" catchtap="homeBack">
+          <view class="iconfont on icon-shouye-shouye"></view>
+          <text class="on text-shouye">首页</text>
+    </view>
+     <view class="footList" catchtap="case1">
+          <view class="iconfont icon-fenlei icon-shouye-shouye"></view>
+          <text class="text-shouye">分类</text>
+    </view>
+      <view class="footList" catchtap="yuyue">
+          <view class="iconfont icon-yuyue icon-shouye-shouye"></view>
+          <text class="text-shouye">预约</text>
+    </view>
+    <view class="footList" catchtap="callme">
+          <view class="iconfont icon-dianhua1"></view>
+          <text>电话</text>
+    </view>
+    <view class="footList">
+      <button open-type="contact" class="footServe">
+          <view class="iconfont icon-weixin"></view>
+          <text>客服</text>
+      </button>
+    </view>
+  </view>
+</template>
