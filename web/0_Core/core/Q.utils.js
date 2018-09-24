@@ -70,6 +70,24 @@ Q.utils.each(['String', 'Function', 'Array', 'Number', 'RegExp', 'Object'], func
 
 
 
+//获取[min,max]中一个随机整数
+Q.utils.randomNumber=function(min,max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+//获取[min,max]中一个随机整数数组
+//isRepeat 字符是否允许重复出现
+Q.utils.randomNumberArray=function(min,max,len,isRepeat) {
+    Math.floor(Math.random()*(max-min+1)+min);
+}
+
+//获取随机字符
+//charType 1 只支持0-9整数，2 只支持a-z字符，3 0-9和a-z字符混合
+//isRepeat 字符是否允许重复出现
+Q.utils.randomChars=function(charType,len,isRepeat) {
+    
+}
+
 
 
 
@@ -82,6 +100,7 @@ function getQueryString(name) { //获取Url参数
 }
 
 
+//window.onload 添加方法
 function addLoadEvent(fn) {
     var oldonload = window.onload;
     if (typeof window.onload != 'function') {
@@ -95,6 +114,7 @@ function addLoadEvent(fn) {
     }
 }
 
+//获取不同浏览器的HTTP对象
 function getHTTPObject() {
     if (typeof XMLHttpRequest == "undefined") {
         XMLHttpRequest = function () {
@@ -111,10 +131,6 @@ function getHTTPObject() {
         };
     }
     return new XMLHttpRequest();
-}
-
-function isArray(){
-
 }
 
 /*

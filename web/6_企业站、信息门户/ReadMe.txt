@@ -1,17 +1,8 @@
-﻿瀑布流
-图片懒加载
-loading, 按钮禁用效果
-验证
-zoom
+﻿
 select2
 radio美化
 switchbutton
-地图map
-日期控件
-联盟广告
-CSS Sprite
 打包，压缩
-客户端缓存
 
 
 企业站
