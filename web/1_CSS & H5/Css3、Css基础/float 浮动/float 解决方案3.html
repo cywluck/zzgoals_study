@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 10px solid #f40;
+        }
+
+        .box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid black;
+        }
+
+        .container::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .demo {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        .tip {
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip">
+        float 解决方案3：
+        <br />
+        <br />
+        1. 为父元素的after伪元素设置清除浮动<br />
+        2. 伪元素天生就是行内元素，使用为伪元素清楚浮动需要先转换成块元素<br />
+        3. <a href="http://www.daqianduan.com/3606.html">清楚浮动最佳推荐方案</a>
+    </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="demo"></div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 10px solid #f40;
+        }
+
+        .container p{
+            border-top:0 solid green;
+            clear: both;
+        }
+
+        .box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid black;
+        }
+
+        .demo {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        .tip {
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip">
+        float 解决方案2：
+        <br />
+        <br />
+        1. 在最后一个浮动元素后面加一个空标签，为该标签设置清除浮动<br />
+        2. 缺陷：增加了无意义标签，不够完美<br />
+    </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <p></p>
+    </div>
+    <div class="demo"></div>
+</body>
+
+</html>

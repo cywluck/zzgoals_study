@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        hr {
+            margin: 100px;
+        }
+
+        .container1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-left: 200px;
+            position: relative;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-left: 100px;
+        }
+
+        .cont1 {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: absolute;
+            left: 20px;
+        }
+
+
+
+        .container2 {
+            margin-top: 200px;
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-left: 200px;
+            position: relative;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-left: 100px;
+        }
+
+        .cont2 {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            position: relative;
+            left: 20px;
+        }
+
+
+        /* 总结：
+
+        absolute 
+            1.脱离原来位置进行定位
+            2.相对于最近的有定位属性的父级元素进行定位，如果没有相对于body定位
+
+        relative
+            1.保留原来位置进行定位
+            2.相对于自己原来的位置进行定位
+        
+        fixed
+            相对于浏览器窗口进行定位
+        */
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="box1">
+            <div class="cont1"></div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box2">
+            <div class="cont2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            display: inline-block;
+        }
+
+        .content {
+            margin-left: 50px;
+            margin-top: 150px;
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+
+        .tip {
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content"></div>
+    </div>
+    <h4>margin塌陷弥补方案 bfc(block format context)</h4>
+    <div class="tip">
+        如何触发一个盒子的bfc？
+        <br />
+        <br />
+        有四种方案，都是针对父元素设置的：<br />
+        1. position:absolute/fixed<br />
+        2. display:inline-block<br />
+        3. float:left/right<br />
+        4. overflow:hidden;
+        <br />
+        <br />
+        <br />
+        以上四种方案都有负作用，实际使用中根据场景选择一个影响最小的使用。
+        <a target="_blank" href="https://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html">更多关于bfc的资料</a>
+        <br />
+        <a target="_blank" href="https://www.cnblogs.com/libin-1/p/7098468.html">更多关于bfc的资料</a>
+    </div>
+</body>
+
+</html>

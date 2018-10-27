@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 10px solid #f40;
+            height: 102px;
+        }
+
+        .box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid black;
+        }
+
+        .demo {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        .tip {
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip">
+        float 解决方案1：
+        <br />
+        <br />
+        1. 为父级元素定义高和宽<br />
+        2. 缺陷：如果浮动元素的数量或宽高不确定时无法实现<br />
+    </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="demo"></div>
+</body>
+
+</html>

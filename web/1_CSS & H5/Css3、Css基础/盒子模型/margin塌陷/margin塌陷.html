@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .content {
+            margin-left: 50px;
+            margin-top: 150px;
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content"></div>
+    </div>
+    <h4>父子元素，左右方向的margin生效，上下方向存在margin塌陷的bug:父子取最大的margin，而且一块移动</h4>
+</body>
+
+</html>

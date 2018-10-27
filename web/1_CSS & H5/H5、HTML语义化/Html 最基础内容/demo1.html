@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tip {
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip">
+        Html 知识点：
+        <br />
+        <br />
+        1. 块元素可以包含块元素和行元素，行元素只能包含行元素<br />
+        2. p标签不能包含div和h1-h6，否则p标签会被分割成两个<br />
+        3. a标签不能包含a标签
+    </div>
+    <p>
+        <h1>我是H1</h1>
+        <div class="demo"></div>
+    </p>
+    <a href="http://www.baidu.com"><a href="http://www.taobao.com">百度 or 淘宝</a></a>
+</body>
+
+</html>

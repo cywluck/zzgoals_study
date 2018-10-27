@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 600px;
+            padding: 10px 20px;
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+        }
+
+        .item{
+            margin-top:10px;
+        }
+
+        .item::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .item.fl a,
+        .item.fl p {
+            float: left;
+        }
+
+        .item.fl a {
+            margin-right: 10px;
+        }
+
+        .item.fr>a,
+        .item.fr>div {
+            float: right;
+        }
+
+        .item.fr>a {
+            margin-left: 10px;
+        }
+
+        .item>a {
+            text-decoration: none;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+        }
+
+        .item>div {
+            display: inline-block;
+            max-width: 400px;
+            padding: 10px;
+            background-color: coral;
+            color: #333;
+            font-family: '微软雅黑';
+            font-size: 14px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item fl">
+            <a href="#"></a>
+            <div>你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</div>
+        </div>
+        <div class="item fl">
+            <a href="#"></a>
+            <div>123</div>
+        </div>
+        <div class="item fr">
+            <a href="#"></a>
+            <div>456789</div>
+        </div>
+        <div class="item fl">
+            <a href="#"></a>
+            <div>你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</div>
+        </div>
+        <div class="item fr">
+            <a href="#"></a>
+            <div>你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</div>
+        </div>
+    </div>
+</body>
+
+</html>

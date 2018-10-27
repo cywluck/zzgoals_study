@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .loop {
+            width: 100px;
+            height: 100px;
+            border: 10px solid black;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .loop1 {
+            border-color: blue;
+            position: relative;
+        }
+
+        .loop2 {
+            margin-left: 10px;
+            border-color: black;
+        }
+
+        .loop3 {
+            margin-left: 10px;
+            border-color: red;
+        }
+
+        .loop4 {
+            border-color: yellow;
+            position: absolute;
+            left: 65px;
+            top: 50px;
+        }
+
+        .loop5 {
+            border-color: green;
+            position: absolute;
+            left: 200px;
+            top: 50px;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -180px;
+            margin-top: -85px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loop loop1"></div>
+        <div class="loop loop2"></div>
+        <div class="loop loop3"></div>
+        <div class="loop loop4"></div>
+        <div class="loop loop5"></div>
+    </div>
+</body>
+
+</html>

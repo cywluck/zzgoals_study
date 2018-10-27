@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .search{
+            margin:20px 100px;
+        }
+        .search-tab {
+            list-style: none;
+            height: 25px;
+        }
+        .search-tab li {
+            float: left;
+            padding: 0 7px;
+            color: #f40;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+        }
+        .search-tab li.on{
+            background-color:#f40;
+            font-weight: bold;
+            color:#fff;
+        }
+        .search-tab li:hover{
+            background-color:#f40;
+            font-weight: bold;
+            color:#fff;
+        }
+        .search-box input{
+            width:500px;
+            height: 31px;
+            border:2px solid #f40;
+            vertical-align: top;
+            outline: none;
+            padding-left: 5px;
+        }
+        .search-box a{
+            display: inline-block;
+            height: 35px;
+            line-height: 35px;
+            width:120px;
+            background-color: #f40;
+            color:#fff;
+            font-size:15px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search">
+        <ul class="search-tab">
+            <li class="on">宝贝</li>
+            <li>天猫</li>
+            <li>店铺</li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="欧若拉高光"><a>搜索</a>
+        </div>
+    </div>
+</body>
+
+</html>
