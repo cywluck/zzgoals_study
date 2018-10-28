@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .imgdemo {
+            width: 900px;
+            height: 600px;
+        }
+
+        .tip {
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+        .demo1{
+            display: inline-block;
+            text-decoration: none;
+            width:142px;
+            height: 58px;
+            text-indent: 142px;
+            white-space: nowrap;
+            overflow: hidden;
+            background-image:url(images/taobao_logo.png);
+            background-size:142px 58px;
+
+        }
+
+        .demo2{
+            display: inline-block;
+            text-decoration: none;
+            width:142px;
+            height: 0;
+            padding-top: 58px;
+            overflow: hidden;
+            background-image:url(images/taobao_logo.png);
+            background-size:142px 58px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="imgdemo" src="images/taobao_demo.png" alt="">
+    <div class="tip">
+        图片使用场景：
+        <br />
+        <br />
+        1. 例如上图图片1，文字无法实现的效果，使用图片代替，该场景一般都使用图片做background实现<br />
+        2. 例如上图图片2，真正意义上的图片<br />
+        3. 图片做背景，放在各种文字后面<br />
+        <br />
+        <br />
+        下面使用两种方案实现图片代替文字（考虑SEO或者CSS不能正常加载情况下，文本还要正常在DOM源码中可见）
+    </div>
+    <a href="" class="demo1">淘宝网</a>
+    <br />
+    <br />
+    <a href="" class="demo2">淘宝网</a>
+</body>
+
+</html>
