@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tip {
+            background-color: rgb(240, 247, 202);
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        span {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 40px;
+        }
+
+        .special-span {
+            vertical-align: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip">
+        包含inline属性对齐问题：
+        <br />
+        <br />
+        1. 第一组，span和后面文本底对齐<br />
+        2. 第二组，span里面有文本，内部文本和后面文本底部对齐<br />
+        3. 第三组，在第二组基础上，设置span元素的vertical-aligin,为啥只有后面的文本移动<br />
+    </div>
+    <div><span></span>呵呵</div>
+    <div><span>123</span>呵呵</div>
+    <div><span class="special-span">123</span>呵呵</div>
+</body>
+
+</html>
