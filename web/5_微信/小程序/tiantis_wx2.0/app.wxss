@@ -1,4 +1,0 @@
-/**app.wxss**/
-page{font-family:"Microsoft YaHei";}
-.container{margin-bottom: 105rpx;}
-.clearfix:after{content:"";height:0;overflow:hidden;clear:both;display: block;}

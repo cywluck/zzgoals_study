@@ -1,5 +1,0 @@
-/* introducty.wxss */
-@import "../page-template/comcss.wxss";
-page{height:100%;background:#fff}
-.textMain{height:auto;padding:30rpx 30rpx 120rpx;}
-.textMain text{font-size:14px;line-height:36rpx;margin-bottom:30rpx;color:#555;display:block}

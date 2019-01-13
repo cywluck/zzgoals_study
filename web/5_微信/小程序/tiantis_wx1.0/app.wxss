@@ -1,7 +1,0 @@
-/**app.wxss**/
-page{background:#f5f5f5;font-family:"Microsoft YaHei";}
-.container {
-  height: 100%;
-  box-sizing: border-box;
-  padding-bottom:160rpx
-} 
